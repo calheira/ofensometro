@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicativo para ajudar a encontrar preconceitos escondidos">
+    <meta name="author" content="Bruno Calheira">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <title>Ofensômetro - Menos ofensas e mais amor!</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/ofensometro.css">
+    
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Botao Google Plus. -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'pt-BR'}
+    </script>
+
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=173099036171744&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="loader">
+      <div class="fading-line"></div>
+    </div>
+    <section id="home" class="page">
+      <div class="container">
+        <div class="content cover text-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="animated hiding" data-animation="fadeInDown" data-delay="300">Ofensômetro</h1>
+              <a class="btn btn-lg btn-danger nav-external animated btn-capa hiding" data-animation="fadeIn" data-delay="900" href="#services">Comece a Usar</a>
+              <h3 class="animated hiding" data-animation="fadeIn" data-delay="600">Menos ofensas. Mais amor.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="navbar-top">
+      <nav class="navbar navbar-default navbar-static" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand nav-external" href="#home">Ofensômetro</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#services">Teste sua Frase</a>
+              </li>
+              <li>
+                <a href="#about">Sobre</a>
+              </li>
+              <li>
+                <a href="#contact">Compartilhe</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section id="services" class="page">
+      <div class="container">
+        <div class="content text-center">
+          <div class="heading">
+            <h2>Será que a minha frase ou ideia é ofensiva ou preconceituosa?</h2>
+            <div class="border"></div>
+            <p>Às vezes nossas palavras acabam ferindo as pessoas e nem nos damos conta disso.<br>Alguns preconceitos estão tão profundos em nossas mentes que não conseguimos enxergá-los.<br>O objetivo desse aplicativo é ajudar você a enxergar suas ideias em outros contextos e encontrar seus preconceitos escondidos.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 service animated hiding" data-animation="fadeInUp" data-delay="300">
+              <i class="fa fa-user fa-5x"></i>
+              <h3>1 - Escolha um Grupo</h3>
+              <form>
+              <select id="grupo">
+                  <option>Minha frase é sobre</option>
+                  <option>os negros</option>
+                  <option>os brancos</option>
+                  <option>os gordos</option>
+                  <option>os magros</option>
+                  <option>os asiáticos</option>
+                  <option>os índios</option>
+                  <option>as mulheres</option>
+                  <option>os homens</option>
+                  <option>os transexuais</option>
+                  <option>os gays</option>
+                  <option>as lésbicas</option>
+                  <option>os bissexuais</option>
+                  <option>os heterossexuais</option>
+                  <option>os ateus</option>
+                  <option>os religiosos</option>
+                  <option>os nordestinos</option>
+                  <option>os sulistas</option>
+                  <option>os brasileiros</option>
+                  <option>os estrangeiros</option>
+                  <option>as crianças</option>
+                  <option>os adolescentes</option>
+                  <option>os adultos</option>
+                  <option>os idosos</option>
+              </select>
+              </form>
+              <p>Selecione o grupo sobre o qual a sua frase diz respeito.</p>
+            </div>
+            <div class="col-lg-8 service animated hiding" data-animation="fadeInUp" data-delay="600">
+              <i class="fa fa-pencil fa-5x"></i>
+              <h3>2 - Escreva sua Frase</h3>
+              <input type="text" placeholder="" id="frase" class="texto">
+              <p>Agora escreva a frase sobre o grupo que você selecionou.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="page">
+      <div class="container">
+        <div class="content text-center">
+          <div class="heading">
+            <h2>Veja como fica esta mesma ideia aplicada a outros grupos.</h2>
+            <div class="border"></div>
+            <p>Coloque o cursor sobre uma imagem para ver sua frase aplicada a outro grupo.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="portfolio">
+                <ul class="filters list-inline">
+                  <li>
+                    <a class="active" data-filter="*" href="#">Todos</a>
+                  </li>
+                  <li>
+                    <a data-filter=".etnia" href="#">Etnias</a>
+                  </li>
+                  <li>
+                    <a data-filter=".orsexual" href="#">Orientação Sexual</a>
+                  </li>
+                  <li>
+                    <a data-filter=".genero" href="#">Gênero</a>
+                  </li>
+                  <li>
+                    <a data-filter=".origem" href="#">Origem</a>
+                  </li>
+                  <li>
+                    <a data-filter=".idade" href="#">Idade</a>
+                  </li>
+                  <li>
+                    <a data-filter=".crenca" href="#">Crença</a>
+                  </li>
+                  <li>
+                    <a data-filter=".fisico" href="#">Físico</a>
+                  </li>
+                </ul>
+                <ul class="items list-unstyled clearfix animated hiding" data-animation="fadeInRight">
+                  <li class="item origem">
+                    <a href="#nordestinos">
+                      <img src="assets/img/work/nordestinos.jpg" alt="">
+                      <div class="overlay" id="nordestinos">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item etnia">
+                    <a href="#asiaticos">
+                      <img src="assets/img/work/asiaticos.jpg" alt="">
+                      <div class="overlay" id="asiaticos">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item genero">
+                    <a href="#mulheres">
+                      <img src="assets/img/work/mulheres.jpg" alt="">
+                      <div class="overlay" id="mulheres">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item orsexual">
+                    <a href="#lesbicas">
+                      <img src="assets/img/work/lesbicas.jpg" alt="">
+                      <div class="overlay" id="lesbicas">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item crenca">
+                    <a href="#ateus">
+                      <img src="assets/img/work/ateus.jpg" alt="">
+                      <div class="overlay" id="ateus">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item idade">
+                    <a href="#idosos">
+                      <img src="assets/img/work/idosos.jpg" alt="">
+                      <div class="overlay" id="idosos">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item etnia">
+                    <a href="#indios">
+                      <img src="assets/img/work/indios.jpg" alt="">
+                      <div class="overlay" id="indios">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item genero">
+                    <a href="#transexuais">
+                      <img src="assets/img/work/transexuais.jpg" alt="">
+                      <div class="overlay" id="transexuais">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item idade">
+                    <a href="#adolescentes">
+                      <img src="assets/img/work/adolescentes.jpg" alt="">
+                      <div class="overlay" id="adolescentes">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item origem">
+                    <a href="#brasileiros">
+                      <img src="assets/img/work/brasileiros.jpg" alt="">
+                      <div class="overlay" id="brasileiros">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item crenca">
+                    <a href="#religiosos">
+                      <img src="assets/img/work/religiosos.jpg" alt="">
+                      <div class="overlay" id="religiosos">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item orsexual">
+                    <a href="#bissexuais">
+                      <img src="assets/img/work/bissexuais.jpg" alt="">
+                      <div class="overlay" id="bissexuais">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item idade">
+                    <a href="#adultos">
+                      <img src="assets/img/work/adultos.jpg" alt="">
+                      <div class="overlay" id="adultos">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item etnia">
+                    <a href="#brancos">
+                      <img src="assets/img/work/brancos.jpg" alt="">
+                      <div class="overlay" id="brancos">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item genero">
+                    <a href="#homens">
+                      <img src="assets/img/work/homens.jpg" alt="">
+                      <div class="overlay" id="homens">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item orsexual">
+                    <a href="#heterossexuais">
+                      <img src="assets/img/work/heterossexuais.jpg" alt="">
+                      <div class="overlay" id="heterossexuais">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item etnia">
+                    <a href="#negros">
+                      <img src="assets/img/work/negros.jpg" alt="">
+                      <div class="overlay" id="negros">
+                        <span>Escreva a sua frase.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item orsexual">
+                    <a href="#gays">
+                      <img src="assets/img/work/gays.jpg" alt="">
+                      <div class="overlay" id="gays">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item fisico">
+                    <a href="#gordos">
+                      <img src="assets/img/work/gordos.jpg" alt="">
+                      <div class="overlay" id="gordos">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="item idade">
+                    <a href="#criancas">
+                      <img src="assets/img/work/criancas.jpg" alt="">
+                      <div class="overlay" id="criancas">
+                        <span>Escreva sua frase</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <h2>Se qualquer uma das frases acima te pareceu ofensiva ou preconceituosa, possivelmente a sua frase também é.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients" class="page">
+      <div class="container">
+        <div class="content text-center">
+          <div class="row">
+            <div class="col-lg-12 animated hiding" data-animation="fadeInDown">
+              <div id="testimonials" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+                  <li data-target="#testimonials" data-slide-to="1" class=""></li>
+                  <li data-target="#testimonials" data-slide-to="2" class=""></li>
+                  <li data-target="#testimonials" data-slide-to="3" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <p class="quote">A um amigo não deves ofender nem por brincadeira.</p>
+                    <p class="client">Públio Siro</p>
+                  </div>
+                  <div class="item">
+                    <p class="quote">Não devemos permitir que alguém saia da nossa presença sem se sentir melhor e mais feliz.</p>
+                    <p class="client">Madre Tereza de Calcutá</p>
+                  </div>
+                  <div class="item">
+                    <p class="quote">Se você odeia alguém, é porque odeia alguma coisa nele que faz parte de você. O que não faz parte de nós não nos perturba.</p>
+                    <p class="client">Hermann Hesse</p>
+                  </div>
+                  <div class="item">
+                    <p class="quote">Fico triste quando alguém me ofende, mas, com certeza, eu ficaria mais triste se fosse eu o ofensor... Magoar alguém é terrível!</p>
+                    <p class="client">Chico Xavier</p>
+                  </div>
+                </div>
+                <a class="left carousel-control" data-slide="prev" href="#testimonials">&lsaquo;</a>
+                <a class="right carousel-control" data-slide="next" href="#testimonials">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="page">
+      <div class="container">
+        <div class="content text-center">
+          <div class="heading">
+            <h2>Sobre o Ofensômetro.</h2>
+            <div class="border"></div>
+            <p>Apesar de vivermos num mundo conectado, nunca estivemos tão divididos.<br>Mas raças, crenças, orientações sexuais ou qualquer outra diferença não são motivos para ter raiva ou ofender o outro. <br>Afinal de contas, mesmo com as diferenças, todos compartilhamos de pelo menos uma característica: somos seres humanos.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding" data-animation="fadeInLeft" data-delay="600">
+              <div class="profile-photo">
+                <img class="img-responsive" src="assets/img/team/1.jpg" alt="">
+              </div>
+              <div class="bio">
+                <h4>Ofendeu alguém?</h4>
+                <h5>Peça desculpas!</h5>
+                <div class="border"></div>
+                <p>Nunca é tarde para se arrepender de uma agressão.<br>Fale com a pessoa que você ofendeu e peça perdão.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding" data-animation="fadeInUp" data-delay="300">
+              <div class="profile-photo">
+                <img class="img-responsive" src="assets/img/team/2.jpg" alt="">
+              </div>
+              <div class="bio">
+                <h4>Dê o perdão!</h4>
+                <h5>É o melhor remédio para o coração.</h5>
+                <div class="border"></div>
+                <p>O incômodo que você sentiu ao ser ofendido vai passar bem mais rápido se você perdoar.<br>Somos humanos, portanto somos falhos.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding" data-animation="fadeInUp" data-delay="300">
+              <div class="profile-photo">
+                <img class="img-responsive" src="assets/img/team/3.jpg" alt="">
+              </div>
+              <div class="bio">
+                <h4>Conheça melhor.</h4>
+                <h5>Procure conhecer, antes de falar.</h5>
+                <div class="border"></div>
+                <p>Geralmente temos medo do que não entendemos ou não conhecemos.<br>Isso acaba levando a criações de preconceitos e barreiras.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 teammate animated hiding" data-animation="fadeInRight" data-delay="600">
+              <div class="profile-photo">
+                <img class="img-responsive" src="assets/img/team/4.jpg" alt="">
+              </div>
+              <div class="bio">
+                <h4>Aceitamos sugestões.</h4>
+                <h5>O que podemos fazer melhor?</h5>
+                <div class="border"></div>
+                <p>Esta é a primeira versão deste aplicativo.<br>Pretendo aprimorá-lo.<br>O que você sugere?</p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="mailto:bruno@calheira.com" title="Email">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://plus.google.com/105434270526176474450" rel="publisher" title="Google+"><i class="fa fa-google-plus"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.twitter.com/brunocalheira" title="Twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="page">
+      <div class="container">
+        <div class="content cover text-center">
+          <div class="heading">
+            <h2>Compartilhe.</h2>
+            <div class="border"></div>
+            <p>Gostou deste aplicativo?<br>Então, fale com seus amigos e conhecidos.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 animated hiding" data-animation="fadeInRight" data-delay="600">
+              <i class="fa fa-google-plus fa-3x"></i>
+              <!-- Posicione esta tag onde você deseja que o botão +1 apareça. -->
+              <div class="g-plusone" data-size="tall"></div>
+            </div>
+            <div class="col-lg-4 animated hiding" data-animation="fadeInDown" data-delay="300">
+              <i class="fa fa-facebook fa-3x"></i>
+              <div class="fb-like" data-href="http://www.calheira.com/ofensometro" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+            <div class="col-lg-4 animated hiding" data-animation="fadeInLeft" data-delay="600">
+              <i class="fa fa-twitter fa-3x"></i>
+              <a href="https://twitter.com/intent/tweet?button_hashtag=Ofensometro&text=Conhe%C3%A7a%20o%20%23ofens%C3%B4metro.%20Mais%20amor%2C%20menos%20ofensas!" class="twitter-hashtag-button" data-size="large" data-related="brunocalheira" data-url="http://www.calheira.com/ofensometro">Tweet #Ofensometro</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              </script>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 animated hiding" data-animation="fadeInUp">
+            <p class="copyright"> 
+              Criado com  <i class="fa fa-heart"></i> por <a href="http://www.calheira.com/">Bruno Calheira</a> &middot; 
+              Software Livre licenciado sob a <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a> &middot; 
+              Baseado em <a href="http://getbootstrap.com/">Bootstrap</a>  &middot; 
+              e &middot; <a href="http://www.github.com/halibegic/merlin">Merlin</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.min.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nav.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/twitterFetcher.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/ofensometro.js"></script>
+    <!-- Google Analytics: change UA-25089888-9 to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55577031-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

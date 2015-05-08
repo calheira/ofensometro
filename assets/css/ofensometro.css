@@ -1,0 +1,16 @@
+h1 {
+	color: #E2C461;
+}
+
+.btn-capa {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 2.8;
+    border-radius: 6px;
+}
+
+.texto {
+	width: 420px;
+	text-align: center;
+	height: 30px;
+}
