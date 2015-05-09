@@ -1,28 +1,12 @@
-Merlin
+Ofensômetro
 ======
-Free template with [Twitter Bootstrap](http://getbootstrap.com/) framework.
+Um aplicativo para te ajudar a encontrar seus preconceitos escondidos.
 
-### Download
 
-[https://github.com/halibegic/merlin/archive/master.zip](https://github.com/halibegic/merlin/archive/master.zip)
-
-### Credits
- * [jQuery](http://jquery.com/)
- * [Bootstrap](http://getbootstrap.com/)
- * [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
- * [Isotope](https://github.com/desandro/isotope)
- * [ImagesLoaded](https://github.com/desandro/imagesloaded)
- * [Animate.css](http://daneden.github.io/animate.css/)
- * [Twitter Post Fetcher](http://jasonmayes.com/projects/twitterApi)
- * [jQuery Scroll To](http://flesler.blogspot.com/2007/10/jqueryscrollto.html)
- * [jQuery One Page Nav](https://github.com/davist11/jQuery-One-Page-Nav)
- * [jQuery Appear](https://github.com/bas2k/jquery.appear/)
- * [Unsplash](http://unsplash.com/)
- * [Stockvault](https://www.stockvault.net/c/people)
 
 ### Copyright and License
 
-Copyright 2014 [Hasan Alibegić](http://www.twitter.com/halibegic)
+Copyright 2015 [Bruno Calheira](http://www.calheira.com)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
