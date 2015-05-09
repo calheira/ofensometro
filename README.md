@@ -2,6 +2,8 @@ Ofensômetro
 ======
 Um aplicativo para te ajudar a encontrar seus preconceitos escondidos.
 
+[Clique aqui para experimentá-lo!](http://calheira.github.com/ofensometro)
+
 
 
 ### Copyright and License
